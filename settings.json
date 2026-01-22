@@ -1,0 +1,13 @@
+{
+  "sound_enabled": true,
+  "player_speed_multiplier": 1.0,
+  "alien_speed_multiplier": 1.0,
+  "bullet_speed_multiplier": 1.0,
+  "color_mode": "normal",
+  "show_trails": true,
+  "rapid_fire": false,
+  "bullet_hell": false,
+  "invincible": false,
+  "chaos_mode": false,
+  "game_mode": "normal"
+}

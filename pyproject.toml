@@ -1,0 +1,33 @@
+[project]
+name = "tty-invaders"
+version = "1.0.2"
+description = "A polished terminal-based Space Invaders game"
+requires-python = ">=3.11"
+dependencies = [
+    "blessed>=1.20.0",
+    "pygame-ce>=2.5.0",
+]
+
+[project.scripts]
+tty-invaders = "tty_invaders.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
